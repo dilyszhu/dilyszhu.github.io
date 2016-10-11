@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Test</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+<body>
+<div id="joedot">
+<img id="joe" src="newlogo-normal.png"/>
+</div>
+<form id="comment-form">
+<section id="dot">
+	<div class="date">
+	   <input id="date1" type="text" placeholder="MM/DD" size="6"> to <input id="date2" type="text" placeholder="MM/DD" size="6">
+	</div>
+
+	<p class="check">Check all <button class="mmc morn">mornings,</button> <button class="mmc mid">mids,</button> <button class="mmc clos">closings.</button></p>
+
+</section>
+<section id="days">
+<div class="day">
+<button class="h2 mon1">MONDAY</button>
+<button id="mon1" class="one shift">MORNING
+</button>
+<button id="mon2" class="two shift">MID
+</button>
+<button id="mon3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 tues1">TUESDAY</button>
+<button id="tues1" class="one shift">MORNING
+</button>
+<button id="tues2" class="two shift">MID
+</button>
+<button id="tues3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 wed1">WEDNESDAY</button>
+<button id="wed1" class="one shift">MORNING
+</button>
+<button id="wed2" class="two shift">MID
+</button>
+<button id="wed3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 thur1">THURSDAY</button>
+<button id="thur1" class="one shift">MORNING
+</button>
+<button id="thur2" class="two shift">MID
+</button>
+<button id="thur3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 fri1">FRIDAY</button>
+<button id="fri1" class="one shift">MORNING
+</button>
+<button id="fri2" class="two shift">MID
+</button>
+<button id="fri3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 sat1">SATURDAY</button>
+<button id="sat1" class="one shift">MORNING
+</button>
+<button id="sat2" class="two shift">MID
+</button> 
+<button id="sat3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 sun1">SUNDAY</button>
+<button id="sun1" class="one shift">MORNING
+</button>
+<button id="sun2" class="two shift">MID
+</button>
+<button id="sun3" class="three shift">CLOSING
+</button>
+</div>
+<div class="more">
+	<textarea id="extra" name="paragraph_text" cols="196" rows="5"></textarea>
+</div>
+
+<!-- <hr/>
+<div class="date">October 17 to October 23</div>
+
+<p class="check">Check all <button id="morn" class="mmc">mornings,</button> <button id="mid" class="mmc">mids,</button> <button id="clos" class="mmc">closings.</button></p>
+<hr/>
+
+<div class="day">
+<button class="h2 mon2">MONDAY</button>
+<button id="mon4" class="one shift">MORNING
+</button>
+<button id="mon5" class="two shift">MID
+</button>
+<button id="mon6" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 tues2">TUESDAY</button>
+<button id="tues4" class="one shift">MORNING
+</button>
+<button id="tues5" class="two shift">MID
+</button>
+<button id="tues6" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 wed2">WEDNESDAY</button>
+<button id="wed4" class="one shift">MORNING
+</button>
+<button id="wed5" class="two shift">MID
+</button>
+<button id="wed6" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 thur2">THURSDAY</button>
+<button id="thur4" class="one shift">MORNING
+</button>
+<button id="thur5" class="two shift">MID
+</button>
+<button id="thur6" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 fri2">FRIDAY</button>
+<button id="fri4" class="one shift">MORNING
+</button>
+<button id="fri5" class="two shift">MID
+</button>
+<button id="fri6" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 sat2">SATURDAY</button>
+<button id="sat1" class="one shift">MORNING
+</button>
+<button id="sat2" class="two shift">MID
+</button> 
+<button id="sat3" class="three shift">CLOSING
+</button>
+</div>
+
+<div class="day">
+<button class="h2 sun2">SUNDAY</button>
+<button id="sun1" class="one shift">MORNING
+</button>
+<button id="sun2" class="two shift">MID
+</button>
+<button id="sun3" class="three shift">CLOSING
+</button>
+</div> -->
+<hr/>
+
+   <input id="name" type="text" placeholder="enter your name">
+   <input type="submit" name="">
+ 
+  <span id="aval">
+AVAILABILITY:<span id="div"></span>
+ </span>
+</section>
+ <hr/>
+
+ </form>
+
+<section id="results">
+
+<div class="box">
+<h3>Monday</h3>
+<div class="here" id="mmon1">morning&colon; </div>
+<div class="here" id="mmon2">mid&colon; </div>
+<div class="here" id="mmon3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Tuesday</h3>
+<div class="here" id="ttues1">morning&colon; </div>
+<div class="here" id="ttues2">mid&colon; </div>
+<div class="here" id="ttues3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Wednesday</h3>
+<div class="here" id="wwed1">morning&colon; </div>
+<div class="here" id="wwed2">mid&colon; </div>
+<div class="here" id="wwed3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Thursday</h3>
+<div class="here" id="tthur1">morning&colon; </div>
+<div class="here" id="tthur2">mid&colon; </div>
+<div class="here" id="tthur3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Friday</h3>
+<div class="here" id="ffri1">morning&colon; </div>
+<div class="here" id="ffri2">mid&colon; </div>
+<div class="here" id="ffri3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Saturday</h3>
+<div class="here" id="ssat1">morning&colon; </div>
+<div class="here" id="ssat2">mid&colon; </div>
+<div class="here" id="ssat3">closing&colon; </div>
+</div>
+
+<div class="box">
+<h3>Sunday</h3>
+<div class="here" id="ssun1">morning&colon; </div>
+<div class="here" id="ssun2">mid&colon; </div>
+<div class="here" id="ssun3">closing&colon; </div>
+</div>
+
+</section>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
