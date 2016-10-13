@@ -1,247 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Firebase Test</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<title>anxietyis</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css?family=Dosis:800|Fjalla+One|Londrina+Outline|Londrina+Shadow|Oswald|Yeseva+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/reset.css">
+	  	<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/untitled.css">
 
 </head>
 <body>
-<div id="joedot">
-<img id="joe" src="newlogo-normal.png"/>
+<div >
+<header>
+	<p id="h1"><a href="untitled.html">&num;anxietyis</a></p>	
+	<nav>
+	<ul>
+		<li><a href="who.html">about me</a></li>
+		<li><a href="contact.html">contact</a></li>
+	</ul>
+	</nav>
+</header>
 </div>
-<form id="comment-form">
-<section id="dot">
-	<div class="date">
-	   <input id="date1" type="text" placeholder="MM/DD" size="6"> to <input id="date2" type="text" placeholder="MM/DD" size="6">
+<!-- <div id=top></div>
+ -->
+<main>
+	<h2 id="ask" class="wrapper2">what does your <span></span><span id="anxiety"><div class="your">&num;</div><div class="your">a</div><div class="your">n</div><div class="your">x</div><div class="your">i</div><div class="your">e</div><div class="your">t</div><div class="your">y </div></span> look like? </h2>
+
+    <form name="message" id="comment-form" action="" class="wrapper2">
+        <textarea rows="1" cols="60" name="usermsg" type="text" id="comment" maxlength="250"/></textarea>
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Submit" />
+        <p>(Please limit to 250 characters.)</p>
+    </form>
+</main>
+
+
+<div id="grey">
+
+	<div id="examples" class="wrapper2">
+	<ul id="comments">
+	</ul>
+	<!-- <ul>
+		<li><b>&commat;carrot: </b>It is a group of invisible monsters pulling you back saying, "Wait! That's scary!" Keeping you from being the person you want to be.</li>
+		<li><b>&commat;broccoli: </b>To be anxious is to be dragged down and boxed in by irrational fear. And when fear is on your mind, you can think of nothing else. It takes over your mind, body, and world.</li>
+		<li><b>&commat;lettuce: </b>It is as if there are a dozen other programs running on your computer at once. It distracts you and slows you down. It is a constant static of negative thoughts running through the back of your mind.</li>
+		<li><b>&commat;tomato: </b>It is voices constantly telling you all the ways in which something can go wrong.</li>
+	</ul> -->
 	</div>
 
-	<p class="check">Check all <button class="mmc morn">mornings,</button> <button class="mmc mid">mids,</button> <button class="mmc clos">closings.</button></p>
-
-</section>
-<section id="days">
-<div class="day">
-<button class="h2 mon1">MONDAY</button>
-<button id="mon1" class="one shift">MORNING
-</button>
-<button id="mon2" class="two shift">MID
-</button>
-<button id="mon3" class="three shift">CLOSING
-</button>
 </div>
 
-<div class="day">
-<button class="h2 tues1">TUESDAY</button>
-<button id="tues1" class="one shift">MORNING
-</button>
-<button id="tues2" class="two shift">MID
-</button>
-<button id="tues3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 wed1">WEDNESDAY</button>
-<button id="wed1" class="one shift">MORNING
-</button>
-<button id="wed2" class="two shift">MID
-</button>
-<button id="wed3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 thur1">THURSDAY</button>
-<button id="thur1" class="one shift">MORNING
-</button>
-<button id="thur2" class="two shift">MID
-</button>
-<button id="thur3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 fri1">FRIDAY</button>
-<button id="fri1" class="one shift">MORNING
-</button>
-<button id="fri2" class="two shift">MID
-</button>
-<button id="fri3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 sat1">SATURDAY</button>
-<button id="sat1" class="one shift">MORNING
-</button>
-<button id="sat2" class="two shift">MID
-</button> 
-<button id="sat3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 sun1">SUNDAY</button>
-<button id="sun1" class="one shift">MORNING
-</button>
-<button id="sun2" class="two shift">MID
-</button>
-<button id="sun3" class="three shift">CLOSING
-</button>
-</div>
-<div class="more">
-	<textarea id="extra" name="paragraph_text" cols="196" rows="5"></textarea>
-</div>
-
-<!-- <hr/>
-<div class="date">October 17 to October 23</div>
-
-<p class="check">Check all <button id="morn" class="mmc">mornings,</button> <button id="mid" class="mmc">mids,</button> <button id="clos" class="mmc">closings.</button></p>
-<hr/>
-
-<div class="day">
-<button class="h2 mon2">MONDAY</button>
-<button id="mon4" class="one shift">MORNING
-</button>
-<button id="mon5" class="two shift">MID
-</button>
-<button id="mon6" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 tues2">TUESDAY</button>
-<button id="tues4" class="one shift">MORNING
-</button>
-<button id="tues5" class="two shift">MID
-</button>
-<button id="tues6" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 wed2">WEDNESDAY</button>
-<button id="wed4" class="one shift">MORNING
-</button>
-<button id="wed5" class="two shift">MID
-</button>
-<button id="wed6" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 thur2">THURSDAY</button>
-<button id="thur4" class="one shift">MORNING
-</button>
-<button id="thur5" class="two shift">MID
-</button>
-<button id="thur6" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 fri2">FRIDAY</button>
-<button id="fri4" class="one shift">MORNING
-</button>
-<button id="fri5" class="two shift">MID
-</button>
-<button id="fri6" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 sat2">SATURDAY</button>
-<button id="sat1" class="one shift">MORNING
-</button>
-<button id="sat2" class="two shift">MID
-</button> 
-<button id="sat3" class="three shift">CLOSING
-</button>
-</div>
-
-<div class="day">
-<button class="h2 sun2">SUNDAY</button>
-<button id="sun1" class="one shift">MORNING
-</button>
-<button id="sun2" class="two shift">MID
-</button>
-<button id="sun3" class="three shift">CLOSING
-</button>
+<!-- <div id="pics">
+	<div class="wrapper2">
+		<img src="img/1.jpg"/>
+		<img src="img/2.jpg"/>
+		<img src="img/3.jpg"/>
+		<img src="img/2.jpg"/>
+		<img src="img/3.jpg"/>
+		<img src="img/1.jpg"/>
+	</div>
 </div> -->
-<hr/>
 
-   <input id="name" type="text" placeholder="enter your name">
-   <input type="submit" name="">
- 
-  <span id="aval">
-AVAILABILITY:<span id="div"></span>
- </span>
-</section>
- <hr/>
+<footer>
+	<p>&copy; 2016 dilys zhu</p>
+</footer>
 
- </form>
+<!-- DO NOT TOUCH
+ -->
+<script id="comment-template" type="text/x-handlebars-template">
+  <li data-id="{{commentId}}">
+    <span>{{likes}}</span>
+    <p>{{comment}}</p>
+    <i class="fa fa-trash delete"></i>
+    <i class="fa fa-heart-o like"></i>
+  </li>
+</script>
 
-<section id="results">
+  	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  	<script src="js/handlebars-v4.0.5.js"></script>
+  	<script src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/untitled.js"></script>
 
-<div class="box">
-<h3>Monday</h3>
-<div class="here" id="mmon1">morning&colon; </div>
-<div class="here" id="mmon2">mid&colon; </div>
-<div class="here" id="mmon3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Tuesday</h3>
-<div class="here" id="ttues1">morning&colon; </div>
-<div class="here" id="ttues2">mid&colon; </div>
-<div class="here" id="ttues3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Wednesday</h3>
-<div class="here" id="wwed1">morning&colon; </div>
-<div class="here" id="wwed2">mid&colon; </div>
-<div class="here" id="wwed3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Thursday</h3>
-<div class="here" id="tthur1">morning&colon; </div>
-<div class="here" id="tthur2">mid&colon; </div>
-<div class="here" id="tthur3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Friday</h3>
-<div class="here" id="ffri1">morning&colon; </div>
-<div class="here" id="ffri2">mid&colon; </div>
-<div class="here" id="ffri3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Saturday</h3>
-<div class="here" id="ssat1">morning&colon; </div>
-<div class="here" id="ssat2">mid&colon; </div>
-<div class="here" id="ssat3">closing&colon; </div>
-</div>
-
-<div class="box">
-<h3>Sunday</h3>
-<div class="here" id="ssun1">morning&colon; </div>
-<div class="here" id="ssun2">mid&colon; </div>
-<div class="here" id="ssun3">closing&colon; </div>
-</div>
-
-</section>
-
-
-
-
-
-<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
-
-<script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
