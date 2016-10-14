@@ -61,13 +61,13 @@ commentsReference.push({
 
 })
 
-var randomcomments=[];
+
 
 
 
 function getComments() {
     database.ref('comments').on('value', function (results) {
-      // console.log(results.val());
+      console.log(results.val());
       var allComments = results.val();
 
       for (var item in allComments) {
@@ -78,24 +78,11 @@ function getComments() {
           title: allComments[item].title,
           commentId: item
         };
-        if (allComments[item].mod===1){
-        randomcomments.push("<li><b>&commat;" + printComment.title + ": </b>" + printComment.text + "</li>");
-        }
+          if (allComments[item].mod===1){
+          $("#comments").append("<li><b>&commat;" + printComment.title + ": </b>" + printComment.text + "</li>")
+          }
 
       }
-var legnth= randomcomments.length;
-console.log(legnth);
-console.log(randomcomments.length);
-
-    var rando=(Math.floor(Math.random()*legnth));
-    console.log(rando)
-    $('#comments').append(randomcomments.slice(rando,4));  
-
-
-
-
-
-
     })
   }
 
@@ -103,17 +90,8 @@ getComments();
 
 
 
-
-    // $('#comments').append(randomcomments(rando));
-    // $('#comments').append(randomcomments(rando));
-    // $('#comments').append(randomcomments(rando));
-
-
-
-
-
 $(window).resize(function () {
-    // console.log($(window).height())
+    console.log($(window).height())
     if($(window).width()>=936){
       $('#mobile-nav').hide();
     }
